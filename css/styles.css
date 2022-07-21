@@ -1,10 +1,10 @@
-:root {
+root {
   --main-title-color: #ffffff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-}
+} 
 
 .link {
   text-decoration: none;
