@@ -1,81 +1,254 @@
-root {
+:root {
   --main-title-color: #ffffff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-} 
+}
+
+.list {
+  list-style: none;
+}
 
 .link {
   text-decoration: none;
 }
 
-/*HEADER*/
-.head-link {
-  font-family: 'Open Sans';
-  font-style: normal;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.after-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---------HEADER------------ */
+
+.header {
+  background-color: gray;
+}
+test .header-link,
+.header-tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
-.head-link:hover .head-link:focus {
+.header-link:hover .header-link:focus {
   color: #ff6c00;
 }
 
-.header-tel {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+/* .header-tel{ 
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+ color: #FFFFFF;
+}*/
 
 .header-btn {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
-.hero-link {
-  font-family: 'Open Sans';
-  font-style: normal;
+/* ---------HERO------------ */
+
+.hero {
+  background-color: #777070;
+}
+test .hero-link {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
 
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
+.hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  color: var(--main-title-color);
+}
+
+.hero-after-title {
+  color: #9da4bd;
+}
+
+/* ---------ABOUT------------ */
+
+.about-pre-title {
+  color: #303030;
+}
+.about-title {
+  color: #303030;
+}
+.about-after-title {
+  color: #555555;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  color: #303030;
+}
+
+/* ---------PRICES------------ */
+
+.prices {
+  background-color: #303030;
+}
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  color: var(--main-title-color);
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-list-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
   color: #ffffff;
 }
 
-/* ABOUT*/
+/* ---------BENEFITS------------ */
 
-.about {
+.benefits {
 }
-.about-list {
+
+.benefits-list {
 }
-.about-item {
+
+.list {
+}
+
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.36;
+  text-align: center;
+  color: #ff6c00;
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.benefits-pre-title {
+  color: #303030;
+}
+
+.benefits-title {
+  color: #303030;
+}
+
+.benefits-after-title {
+  color: #555555;
+}
+
+/* ---------BARBERS------------ */
+
+.barbers {
+}
+.barbers-pre-title {
+  color: #303030;
+}
+.barbers-title {
+  color: #303030;
+}
+
+.barbers-list {
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.barbers-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+/* ---------GALLERY------------ */
+
+.gallery-pre-title {
+  color: #303030;
 }
