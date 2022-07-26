@@ -2,6 +2,33 @@
   --main-title-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+address{
+  font-style: normal;
+}
+
+img{
+
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -25,6 +52,19 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.section{
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-left: auto;
+  outline:2px solid red;
 }
 
 .title {
@@ -63,7 +103,10 @@ body {
 
 .header {
   background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 test .header-link,
 .header-tel {
   font-weight: 600;
@@ -94,12 +137,17 @@ letter-spacing: 0.1em;
 .hero {
   background-color: #777070;
 }
-test .hero-link {
+
+.hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+
+.hero-content{
+
+  }
 }
 
 .hero-pre-title {
@@ -117,6 +165,7 @@ test .hero-link {
 
 .hero-after-title {
   color: #9da4bd;
+  max-width: 360px;
 }
 
 /* ---------ABOUT------------ */
@@ -145,6 +194,7 @@ test .hero-link {
 
 .prices {
   background-color: #303030;
+  margin-bottom: 20px;
 }
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
@@ -153,6 +203,7 @@ test .hero-link {
   color: var(--main-title-color);
 }
 .prices-list {
+  border: 1px: solid:#ffffff;
 }
 .prices-item {
 }
@@ -173,6 +224,9 @@ test .hero-link {
 }
 
 .benefits-list {
+  width: 170px;
+  height: 133px;
+border: 1px: solid:#ffffff;
 }
 
 .list {
