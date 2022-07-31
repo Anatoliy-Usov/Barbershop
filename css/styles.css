@@ -90,12 +90,17 @@ body {
 }
 
 .btn {
+  width: 160px;
+  height: 40px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 /* ---------HEADER------------ */
@@ -105,6 +110,24 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.header-logo{
+margin-right: 130px;
+}
+
+.header .container{
+  display: flex;
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+  }
+
+  .header-item:not(:last-child){
+    margin-right: 30px;
+  }
+  
 
 .header-link,
 .header-tel {
@@ -119,24 +142,21 @@ body {
   color: #ff6c00;
 }
 
-/* .header-tel{ 
-font-weight: 600;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.1em;
- color: #FFFFFF;
-}*/
+.header-connect{
+  margin-left: auto;
+}
 
 .header-btn {
   color: #ffffff;
+  margin-left: 40px;
 }
 
 /* ---------HERO------------ */
 
-.hero {
-  background-color: #777070;
+.hero .container{
+display: flex;
 }
-
+ 
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -145,8 +165,14 @@ letter-spacing: 0.1em;
   color: #303030;
 }
 
+.hero-list{
+   width: 100px;
+}
+
 .hero-content{
 padding: 272px 100px 206px 100px;
+ background-color: #777070;
+ flex-grow: 1;
 }
  
 .hero-pre-title {
@@ -176,18 +202,35 @@ padding: 272px 100px 206px 100px;
  
 }
 
+.about-list{
+  display: flex;
+column-gap: 30px;
+}
+
+.about .container{
+display: flex;
+column-gap: 30px;
+}
+
+.about-content{
+  min-width: 470px;
+}
+
 .about-pre-title {
  margin-bottom: 20px;  
   color: #303030;
 }
+
 .about-title {
   margin-bottom: 20px;
   color: #303030;
 }
+
 .about-after-title {
   margin-bottom: 20px;
   color: #555555;
 }
+
 .about-text {
   font-weight: 400;
   font-size: 14px;
@@ -217,13 +260,31 @@ padding: 272px 100px 206px 100px;
   margin-bottom: 44px;
 }
 
+.prices-wrap{
+
+}
+
+.prices-wrap{
+display: flex;
+justify-content: space-between; 
+}
+
 .prices-list {
 border: 1px solid #ffffff;
 padding: 30px 20px;
+ width: calc(50% - 15px);
 }
 
 .prices-item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; 
 }
+
+.prices-item:last-child{
+  margin-bottom: 0;
+} 
+
 
 .prices-list-text {
   font-weight: 400;
@@ -304,14 +365,24 @@ border: 1px: solid:#ffffff;
 
 .barbers {
 }
+
 .barbers-pre-title {
   color: #303030;
+  margin : 20px;
 }
+
 .barbers-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item{
+  width: calc((100%-60px) / 3);
 }
 
 .barbers-item-title {
